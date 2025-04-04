@@ -14,7 +14,7 @@ function addBook() {
           <td>${title}</td>
           <td>${author}</td>
           <td>${isbn}</td>
-          <td><span  class="material-symbols-outlined  delete-btn"> close </span></td>
+          <td><span  class="material-symbols-outlined  delete"> close </span></td>
     </tr>
         `;
   document.getElementById("title").value = "";
@@ -22,8 +22,8 @@ function addBook() {
   document.getElementById("isbn").value = "";
 }
 
-document.getElementById("table-body").addEventListener("click", function (e) {
-  if (e.target.classList.contains("delete-btn")) {
+document.getElementById("book-list").addEventListener("click", function (e) {
+  if (e.target.classList.contains("delete")) {
     e.target.closest("tr").remove();
   }
 });
