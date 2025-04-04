@@ -1,1 +1,92 @@
 /*  your css code here. If applicable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+#heading {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 2rem;
+}
+
+#heading span.book {
+  color: #3498db;
+  font-weight: 600;
+}
+
+.form-group {
+  margin: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group button {
+  margin: 7px;
+  font-size: 15px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(42, 42, 227);
+  color: white;
+}
+
+.table {
+  width: calc(100% - 40px);
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+.table thead tr {
+  text-align: center;
+  font-weight: 500;
+}
+
+.table thead tr td {
+  border-bottom: 2px solid #333;
+}
+
+.table tbody tr {
+  text-align: center;
+  background-color: #ece9e9;
+}
+
+.table tbody tr td {
+  padding: 2px;
+  margin: 5px;
+}
+
+.table tbody tr td span {
+  background-color: red;
+  color: white;
+  margin-top: 4px;
+}
+
+.delete-btn {
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f !important;
+}
+
+/* Add some spacing between rows */
+.table tbody tr td {
+  padding: 8px 5px;
+}
