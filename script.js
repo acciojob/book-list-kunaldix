@@ -8,7 +8,7 @@ function addBook() {
     alert("Please fill in all fields");
     return;
   }
-  let tableRow = document.getElementById("table-body");
+  let tableRow = document.getElementById("book-list");
   tableRow.innerHTML += `
   <tr class = "table-rows">
           <td>${title}</td>
